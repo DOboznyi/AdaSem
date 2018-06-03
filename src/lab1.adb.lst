@@ -1,0 +1,153 @@
+GNAT GPL 2017 (20170515-63)
+Copyright 1992-2017, Free Software Foundation, Inc.
+
+Compiling: lab1.adb
+Source file time stamp: 2018-02-10 22:57:52
+Compiled at: 2018-02-11 23:32:59
+
+     1. -- Laboratory work on the topic: "Ada. Semaphores"
+     2. -- Variant: A = ( B + C ) * ( MO + d * ( MK * MR ) )
+     3. -- Created: 8.02.2018 8:52 PM
+     4. -- Author: Obozniy Dmitriy IO-51
+     5.
+     6.
+     7. with Data, Ada.Text_IO, Ada.Integer_Text_IO, Ada.Synchronous_Task_Control;
+     8. use Ada.Text_IO, Ada.Integer_Text_IO, Ada.Synchronous_Task_Control;
+     9.
+    10.
+    11. procedure Lab1 is
+    12.
+    13.    N: integer := 1000;   -- vector size
+    14.    P: integer := 2;    -- processors count
+    15.    H: integer := N/P;  -- subvector size
+    16.
+    17.    d: integer;  -- shared resource (global variable)
+    18.
+    19.    package datax is new Data (n,p);
+    20.    use datax;
+    21.
+    22.    C, A, B: Vector;    -- shared resource and global variables
+    23.    MO, MK, MR: Matrix; -- shared resource and global variables
+    24.
+    25.    -- semaphores
+    26.    Sem1, Sem2, Sem3, Skd: Suspension_Object;
+    27.
+    28.    procedure Task_Begin is
+    29.
+    30.       task T1 is
+    31.          pragma Task_Name("Task1");
+    32.          pragma Priority(5);
+    33.          pragma Storage_Size(30000000);
+    34.       end T1;
+    35.
+    36.
+    37.       task body T1 is
+    38.          --local variables
+    39.          d1: integer;
+    40.          C1: Vector;
+    41.          MO1: Matrix;
+    42.       begin
+    43.          put_line("Process T1 started ");
+    44.          -- input B, C and MR
+    45.          if n<=1 then
+    46.             Vector_Input(B,"B");
+    47.             Vector_Input(C,"C");
+    48.             Matrix_Input(MR,"MR");
+    49.          else
+    50.             Vector_Fill(B,1);
+    51.             Vector_Fill(C,1);
+    52.             Matrix_Fill(MR,1);
+    53.          end if;
+    54.
+    55.          -- signal for task T2 about end of input B, C and MR
+    56.          Set_True(Sem1);
+    57.
+    58.          -- waiting for end of input in task T2
+    59.          Suspend_Until_True(Sem2);
+    60.
+    61.          -- copy d in d1, C in C1, MO in MO1
+    62.          Suspend_Until_True(Skd);
+    63.          -- critical zone
+    64.          d1:= d;
+    65.          C1:= C;
+    66.          MO1:= MO;
+    67.          Set_True(Skd);
+    68.
+    69.          -- Calculating AH
+    70.          Func(A,B,C1,MO1,MK,MR,d1,0);
+    71.
+    72.          -- waiting for end of calculating in T2
+    73.          Suspend_Until_True(Sem3);
+    74.
+    75.          -- output the result
+    76.          if N<=10 then
+    77.             Put_Line("A: ");
+    78.             Vector_Output(A);
+    79.             put_line("");
+    80.          end if;
+    81.
+    82.          put_line("Process T1 finished");
+    83.       end T1;
+    84.
+    85.       task T2 is
+    86.          pragma Task_Name("Task2");
+    87.          pragma Priority(5);
+    88.          pragma Storage_Size(30000000);
+    89.       end T2;
+    90.
+    91.       task body T2 is
+    92.          -- local variables
+    93.          d2: integer;
+    94.          C2: Vector;
+    95.          MO2: Matrix;
+    96.       begin
+    97.          put_line("Process T2 started ");
+    98.          -- input MO, MK and d
+    99.          if n<=1 then
+   100.             Matrix_Input(MO,"MO");
+   101.             Matrix_Input(MK,"MK");
+   102.          else
+   103.             Matrix_Fill(MO,1);
+   104.             Matrix_Fill(MK,1);
+   105.          end if;
+   106.
+   107.          d:= 1;
+   108.
+   109.          -- signal for task T1 about end of input MO, MK and d
+   110.          Set_True(Sem2);
+   111.
+   112.          -- waiting for end of input in task T1
+   113.          Suspend_Until_True(Sem1);
+   114.
+   115.          -- copy d in d2, C in C2, MO in MO2
+   116.          Suspend_Until_True(Skd);
+   117.          d2:= d;
+   118.          C2:= C;
+   119.          MO2:= MO;
+   120.          Set_True(Skd);
+   121.
+   122.          -- Calculating AH
+   123.          Func(A,B,C2,MO2,MK,MR,d2,1);
+   124.
+   125.          -- signal for T1 about end of calculating
+   126.          Set_True(Sem3);
+   127.
+   128.          put_line("Process T2 finished");
+   129.       end T2;
+   130.    begin
+   131.       null;
+   132.    end Task_Begin;
+   133.
+   134. -- body of main program
+   135. begin
+   136.
+   137.    put_line("Main procedure started ");
+   138.
+   139.    -- setting start value of semaphore Skd
+   140.    Set_True(Skd);
+   141.
+   142.    Task_Begin;
+   143.
+   144. end Lab1;
+
+ 144 lines: No errors

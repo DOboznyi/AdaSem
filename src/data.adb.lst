@@ -1,0 +1,232 @@
+GNAT GPL 2017 (20170515-63)
+Copyright 1992-2017, Free Software Foundation, Inc.
+
+Compiling: data.adb
+Source file time stamp: 2018-02-10 22:56:56
+Compiled at: 2018-02-11 23:32:59
+
+     1. -- Implementation of class called data
+     2.
+     3. with Text_IO, Ada.Integer_Text_IO;
+     4. use Text_IO, Ada.Integer_Text_IO;
+     5.
+     6. package body Data is
+     7.    
+     8.    procedure Find_Borders (s: out integer; f: out integer; num: in integer) is
+     9.    begin
+    10.       s:= 1+num*n/p;
+    11.       f:= (num+1)*n/p;
+    12.    end Find_Borders;
+    13.    
+    14.    --Input Vector from keyboard
+    15.    procedure Vector_Input (A: out Vector; S: in String) is
+    16.    begin
+    17.       for i in 1..n loop
+    18.          Get(A(i));
+    19.          Put(S);
+    20.          Put("[");
+    21.          Put(i);
+    22.          Put("]= ");
+    23.          Put(A(i));
+    24.          Put(" inputed");
+    25.          New_Line(1);
+    26.       end loop;
+    27.    end Vector_input;
+    28.    
+    29.    --Fill Vector with numbers
+    30.    procedure Vector_Fill (A: out Vector; B: in Integer) is
+    31.    begin
+    32.       for i in 1..n loop
+    33.          A(i):=B;
+    34.       end loop;
+    35.    end Vector_Fill;
+    36.    
+    37.    --Print Vector on screen
+    38.    procedure Vector_Output(A: in Vector) is
+    39.    begin
+    40.       for i in 1..n loop
+    41.          Put(A(i));
+    42.          Put(" ");
+    43.       end loop;
+    44.    end Vector_Output;
+    45.    
+    46.    --Input Matrix from keyboard 
+    47.    procedure Matrix_Input (A: out Matrix; S: in String) is
+    48.    begin
+    49.       for i in 1..n loop
+    50.          for j in 1..n loop
+    51.             Get(A(i)(j));
+    52.             Put(S);
+    53.             Put("[");
+    54.             Put(i);
+    55.             Put("][");
+    56.             Put(j);
+    57.             Put("]= ");
+    58.             Put(A(i)(j));
+    59.             Put(" inputed");
+    60.             New_Line(1);
+    61.          end loop;
+    62.       end loop;
+    63.    end Matrix_Input;
+    64.    
+    65.    --Fill Matrix with numbers
+    66.    procedure Matrix_Fill (A: out Matrix; B: in Integer) is
+    67.    begin
+    68.       for i in 1..n loop
+    69.          for j in 1..n loop
+    70.             A(i)(j):=B;
+    71.          end loop;
+    72.       end loop;
+    73.    end Matrix_Fill;
+    74.    
+    75.    --Print Matrix on screen
+    76.    procedure Matrix_Output (A: in Matrix) is
+    77.    begin
+    78.       for i in 1..n loop
+    79.          for j in 1..n loop
+    80.             Put(A(i)(j));
+    81.             Put(" ");
+    82.          end loop;
+    83.          New_Line(1);
+    84.       end loop;
+    85.    end Matrix_Output;
+    86.    
+    87.    --Adds the vector A to the vector B
+    88.    function Vector_Add (A,B: in Vector; num: in integer) return Vector is
+    89.       C: Vector;
+    90.       s, f: integer;
+    91.    begin
+    92.       Vector_Fill(C,0);
+    93.       Find_Borders(s,f,num);
+    94.       for i in s..f loop
+    95.          C(i):=A(i)+B(i);
+    96.       end loop;
+    97.       return C;
+    98.    end Vector_Add;
+    99.    
+   100.    --Adds the matrix A to the matrix B
+   101.    function Matrix_Add (A,B: in Matrix; num: in integer) return Matrix is
+   102.       C: Matrix;
+   103.       s, f: integer;
+   104.    begin
+   105.       Matrix_Fill(C,0);
+   106.       Find_Borders(s,f,num);
+   107.       for i in s..f loop
+   108.          for j in 1..n loop
+   109.             C(i)(j):= A(i)(j)+B(i)(j);
+   110.          end loop;
+   111.       end loop;
+   112.       return C;
+   113.    end Matrix_Add;
+   114.    
+   115.    --Multiply Matrix
+   116.    function Matrix_Multiply (A,B: in Matrix; num: in integer) return Matrix is
+   117.       C: Matrix;
+   118.       s, f: integer;
+   119.    begin
+   120.       Matrix_Fill(C,0);
+   121.       Find_Borders(s,f,num);
+   122.       for i in s..f loop
+   123.          for j in 1..n loop
+   124.             C(i)(j):=0;
+   125.             for k in 1..n loop
+   126.                C(i)(j):=C(i)(j)+A(i)(k)*B(k)(j);  
+   127.             end loop;
+   128.          end loop;
+   129.       end loop;
+   130.       return C;
+   131.    end Matrix_Multiply;
+   132.    
+   133.    --Multiply Vector on Matrix
+   134.    function Matrix_Vector_Multiply (A: in Matrix; B: in Vector; num: in integer) return Vector is
+   135.       C: Vector;
+   136.       s, f: integer;
+   137.    begin
+   138.       Vector_Fill(C,0);
+   139.       Find_Borders(s,f,num);
+   140.       for i in s..f loop
+   141.          C(i):=0;
+   142.          for j in 1..n loop
+   143.             C(i):=C(i)+A(j)(i)*B(i);
+   144.          end loop;
+   145.       end loop;
+   146.       return C;
+   147.    end Matrix_Vector_Multiply;
+   148.    
+   149.    --Multiply Matrix on Number
+   150.    function Matrix_Number_Multiply (A: in Matrix; B,num: in integer) return Matrix is
+   151.       C: Matrix;
+   152.       s, f: integer;
+   153.    begin
+   154.       Matrix_Fill(C,0);
+   155.       Find_Borders(s,f,num);
+   156.       for i in s..f loop
+   157.          for j in 1..n loop
+   158.             C(i)(j):= A(i)(j)*B;
+   159.          end loop;
+   160.       end loop;
+   161.       return C;
+   162.    end Matrix_Number_Multiply;
+   163.    
+   164.    --Calculating Func1
+   165.    --d=((A+B)*(C*(MA*ME)))
+   166.    procedure Func(A: out Vector; B,C: in Vector;MO,MK,MR: in Matrix; d: in Integer; num: in integer) is
+   167.       Res: Vector;
+   168.       s, f: integer;
+   169.    begin
+   170.       Find_Borders(s,f,num);
+   171.       Res:= Matrix_Vector_Multiply(Matrix_Add(MO,Matrix_Number_Multiply(Matrix_Multiply(MK,MR,num),d,num),num),Vector_Add(B,C,num),num);
+   172.       for i in s..f loop
+   173.          A(i):= Res(i);
+   174.       end loop;
+   175.    end Func;
+   176.    
+   177. end Data;
+
+Compiling: data.ads
+Source file time stamp: 2018-02-10 22:05:48
+Compiled at: 2018-02-11 23:32:59
+
+     1. -- Specification of class called data
+     2. -- This class is generic type class
+     3.
+     4. generic
+     5.    n:Integer; -- Parametr used in class
+     6.    p:Integer;
+     7. package data is
+     8.    
+     9.    --Declaration of private types
+    10.    
+    11.    type Vector is private;
+    12.    type Matrix is private;
+    13.   
+    14.    --Input Vector from keyboard   
+    15.    procedure Vector_Input(A: out Vector; S: in String);
+    16.    
+    17.    --Fill Vector with 1   
+    18.    procedure Vector_Fill(A: out Vector; B: in Integer);
+    19.    
+    20.    --Print Vector on screen
+    21.    procedure Vector_Output(A: in Vector);
+    22.     
+    23.    --Input Matrix from keyboard 
+    24.    procedure Matrix_Input(A: out Matrix; S: in String);
+    25.    
+    26.    --Fill Matrix with 1
+    27.    procedure Matrix_Fill(A: out Matrix; B: in Integer);
+    28.    
+    29.    --Print Matrix on screen
+    30.    procedure Matrix_Output(A: in Matrix);
+    31.    
+    32.    --Calculating Func1
+    33.    procedure Func(A: out Vector; B,C: in Vector;MO,MK,MR: in Matrix; d: in Integer; num: in integer);
+    34.    
+    35.    --Determination declarated private types
+    36.     
+    37. private
+    38.    type Vector is array (1..n) of Integer;
+    39.    type Matrix is array (1..n) of Vector;
+    40.     
+    41. end Data;
+
+ 177 lines: No errors

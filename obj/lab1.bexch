@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__lab1.o
+[PROJECT FILES]
+C:\Users\Home\PV2\lab1.gpr
+20180209150336
+[BOUND OBJECT FILES]
+C:\Users\Home\PV2\obj\data.o
+C:\Users\Home\PV2\obj\lab1.o
+[GENERATED SOURCE FILES]
+b__lab1.ads
+b__lab1.adb
+b__lab1.ali
+[RESULTING OPTIONS]
+-LC:\Users\Home\PV2\obj\
+-LC:\Users\Home\PV2\obj\
+-LC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnarl.a
+C:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

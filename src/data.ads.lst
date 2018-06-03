@@ -1,0 +1,50 @@
+GNAT GPL 2017 (20170515-63)
+Copyright 1992-2017, Free Software Foundation, Inc.
+
+Compiling: data.ads
+Source file time stamp: 2018-02-10 22:05:48
+Compiled at: 2018-02-11 23:32:59
+
+     1. -- Specification of class called data
+     2. -- This class is generic type class
+     3.
+     4. generic
+     5.    n:Integer; -- Parametr used in class
+     6.    p:Integer;
+     7. package data is
+     8.    
+     9.    --Declaration of private types
+    10.    
+    11.    type Vector is private;
+    12.    type Matrix is private;
+    13.   
+    14.    --Input Vector from keyboard   
+    15.    procedure Vector_Input(A: out Vector; S: in String);
+    16.    
+    17.    --Fill Vector with 1   
+    18.    procedure Vector_Fill(A: out Vector; B: in Integer);
+    19.    
+    20.    --Print Vector on screen
+    21.    procedure Vector_Output(A: in Vector);
+    22.     
+    23.    --Input Matrix from keyboard 
+    24.    procedure Matrix_Input(A: out Matrix; S: in String);
+    25.    
+    26.    --Fill Matrix with 1
+    27.    procedure Matrix_Fill(A: out Matrix; B: in Integer);
+    28.    
+    29.    --Print Matrix on screen
+    30.    procedure Matrix_Output(A: in Matrix);
+    31.    
+    32.    --Calculating Func1
+    33.    procedure Func(A: out Vector; B,C: in Vector;MO,MK,MR: in Matrix; d: in Integer; num: in integer);
+    34.    
+    35.    --Determination declarated private types
+    36.     
+    37. private
+    38.    type Vector is array (1..n) of Integer;
+    39.    type Matrix is array (1..n) of Vector;
+    40.     
+    41. end Data;
+
+ 41 lines: No errors

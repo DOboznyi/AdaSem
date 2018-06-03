@@ -1,0 +1,166 @@
+graph: { title: "C:\Users\Home\P\src\lab1.adb"
+node: { title: "memcpy" label: "builtin_memcpy\n<built-in>" shape : ellipse }
+node: { title: "_Unwind_Resume" label: "builtin_unwind_resume\n<built-in>" shape : ellipse }
+node: { title: "__gnat_end_handler" label: "gnat_end_handler\n<built-in>" shape : ellipse }
+node: { title: "__gnat_begin_handler" label: "gnat_begin_handler\n<built-in>" shape : ellipse }
+node: { title: "__gnat_rcheck_PE_Finalize_Raised_Exception" label: "gnat_rcheck_PE_Finalize_Raised_Exception\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__finalize" label: "Finalize\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-sytaco.ads:75:14" shape : ellipse }
+node: { title: "ada__exceptions__triggered_by_abort" label: "Triggered_By_Abort\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-except.ads:245:13" shape : ellipse }
+node: { title: "system__tasking__stages__create_task" label: "Create_Task\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/s-tassta.ads:169:14" shape : ellipse }
+node: { title: "ada__text_io__put__4" label: "Put\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-textio.ads:242:14" shape : ellipse }
+node: { title: "ada__integer_text_io__put__2" label: "Put\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-tiinio.ads:66:14" shape : ellipse }
+node: { title: "system__tasking__stages__complete_task" label: "Complete_Task\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/s-tassta.ads:161:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspend_until_true" label: "Suspend_Until_True\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-sytaco.ads:64:14" shape : ellipse }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+node: { title: "system__tasking__stages__complete_activation" label: "Complete_Activation\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/s-tassta.ads:147:14" shape : ellipse }
+node: { title: "system__tasking__stages__activate_tasks" label: "Activate_Tasks\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/s-tassta.ads:131:14" shape : ellipse }
+node: { title: "system__tasking__activation_chainIP" label: "Activation_Chainip\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/s-taskin.ads:1188:9" shape : ellipse }
+node: { title: "ada__synchronous_task_control__set_true" label: "Set_True\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-sytaco.ads:50:14" shape : ellipse }
+node: { title: "ada__text_io__put_line__2" label: "Put_Line\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-textio.ads:263:14" shape : ellipse }
+node: { title: "system__standard_library__abort_undefer_direct" label: "Abort_Undefer_Direct\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/s-stalib.ads:254:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__initialize" label: "Initialize\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-sytaco.ads:72:14" shape : ellipse }
+node: { title: "ada__synchronous_task_control__suspension_objectIP" label: "Suspension_Objectip\nC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adainclude/a-sytaco.ads:78:9" shape : ellipse }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" label: "T2\nC:\Users\Home\P\src\lab1.adb:94:7\n1002144 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "_Unwind_Resume" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TK___finalizer.4854" label: "C:\Users\Home\P\src\lab1.adb:140:0" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "ada__text_io__put_line__2" label: "C:\Users\Home\P\src\lab1.adb:139:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "ada__synchronous_task_control__set_true" label: "C:\Users\Home\P\src\lab1.adb:137:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:132:28" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:132:42" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:132:53" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:132:56" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:132:35" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:132:44" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:132:44" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:132:36" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:132:31" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:132:23" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:132:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:130:28" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:130:37" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:130:38" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:130:38" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:130:29" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:130:29" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:126:13" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "ada__synchronous_task_control__set_true" label: "C:\Users\Home\P\src\lab1.adb:122:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "memcpy" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "ada__synchronous_task_control__suspend_until_true" label: "C:\Users\Home\P\src\lab1.adb:118:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "ada__synchronous_task_control__suspend_until_true" label: "C:\Users\Home\P\src\lab1.adb:115:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "ada__synchronous_task_control__set_true" label: "C:\Users\Home\P\src\lab1.adb:112:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:105:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:105:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:104:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:104:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "ada__text_io__put_line__2" label: "C:\Users\Home\P\src\lab1.adb:100:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "system__tasking__stages__complete_activation" label: "C:\Users\Home\P\src\lab1.adb:94:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKB.4743" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:94:7" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TK___finalizer.4854" label: "T2tk\nC:\Users\Home\P\src\lab1.adb:94:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TK___finalizer.4854" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:94:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TK___finalizer.4854" targetname: "system__tasking__stages__complete_task" label: "C:\Users\Home\P\src\lab1.adb:94:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TK___finalizer.4854" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:94:7" }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKVIP.4731" label: "T2tkvip\nC:\Users\Home\P\src\lab1.adb:93:7\n128 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKVIP.4731" targetname: "system__tasking__stages__create_task" label: "C:\Users\Home\P\src\lab1.adb:93:7" }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" label: "T1\nC:\Users\Home\P\src\lab1.adb:37:7\n1002144 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "_Unwind_Resume" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TK___finalizer.4775" label: "C:\Users\Home\P\src\lab1.adb:91:0" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__text_io__put_line__2" label: "C:\Users\Home\P\src\lab1.adb:90:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__text_io__put__4" label: "C:\Users\Home\P\src\lab1.adb:87:13" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__integer_text_io__put__2" label: "C:\Users\Home\P\src\lab1.adb:86:13" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:86:17" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__synchronous_task_control__suspend_until_true" label: "C:\Users\Home\P\src\lab1.adb:82:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:77:28" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:77:42" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:77:53" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:77:56" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:77:35" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:77:44" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:77:44" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:77:36" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:77:31" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:77:23" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:77:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:73:28" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\Home\P\src\lab1.adb:73:37" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:73:38" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:73:38" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:73:29" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:73:29" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:69:13" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__synchronous_task_control__set_true" label: "C:\Users\Home\P\src\lab1.adb:65:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "memcpy" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__synchronous_task_control__suspend_until_true" label: "C:\Users\Home\P\src\lab1.adb:60:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__synchronous_task_control__suspend_until_true" label: "C:\Users\Home\P\src\lab1.adb:57:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__synchronous_task_control__set_true" label: "C:\Users\Home\P\src\lab1.adb:54:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:49:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:49:16" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:47:13" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\Home\P\src\lab1.adb:46:13" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "ada__text_io__put_line__2" label: "C:\Users\Home\P\src\lab1.adb:43:10" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "system__tasking__stages__complete_activation" label: "C:\Users\Home\P\src\lab1.adb:37:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKB.4712" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:37:7" }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TK___finalizer.4775" label: "T1tk\nC:\Users\Home\P\src\lab1.adb:37:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TK___finalizer.4775" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:37:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TK___finalizer.4775" targetname: "system__tasking__stages__complete_task" label: "C:\Users\Home\P\src\lab1.adb:37:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TK___finalizer.4775" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:37:7" }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKVIP.4700" label: "T1tkvip\nC:\Users\Home\P\src\lab1.adb:30:7\n144 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKVIP.4700" targetname: "system__tasking__stages__create_task" label: "C:\Users\Home\P\src\lab1.adb:30:7" }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" label: "Task_Begin\nC:\Users\Home\P\src\lab1.adb:28:4\n144 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "_Unwind_Resume" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin___finalizer.4219" label: "C:\Users\Home\P\src\lab1.adb:143:0" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "system__tasking__stages__activate_tasks" label: "C:\Users\Home\P\src\lab1.adb:28:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t2TKVIP.4731" label: "C:\Users\Home\P\src\lab1.adb:93:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin__t1TKVIP.4700" label: "C:\Users\Home\P\src\lab1.adb:30:7" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "system__tasking__activation_chainIP" label: "C:\Users\Home\P\src\lab1.adb:28:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:30:12" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:28:4" }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin___finalizer.4219" label: "Task_Begin\nC:\Users\Home\P\src\lab1.adb:28:4\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin___finalizer.4219" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:28:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin___finalizer.4219" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:28:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin___finalizer.4219" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:28:4" }
+node: { title: "_ada_lab1" label: "Lab1\nC:\Users\Home\P\src\lab1.adb:11:1\n3006256 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "_ada_lab1" targetname: "_Unwind_Resume" }
+edge: { sourcename: "_ada_lab1" targetname: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" label: "C:\Users\Home\P\src\lab1.adb:155:0" }
+edge: { sourcename: "_ada_lab1" targetname: "C:\Users\Home\P\src\lab1.adb:lab1__task_begin.4194" label: "C:\Users\Home\P\src\lab1.adb:153:4" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__set_true" label: "C:\Users\Home\P\src\lab1.adb:151:4" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__text_io__put_line__2" label: "C:\Users\Home\P\src\lab1.adb:148:4" }
+edge: { sourcename: "_ada_lab1" targetname: "system__standard_library__abort_undefer_direct" label: "C:\Users\Home\P\src\lab1.adb:26:0" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__initialize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__suspension_objectIP" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "system__standard_library__abort_undefer_direct" label: "C:\Users\Home\P\src\lab1.adb:26:0" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__initialize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__suspension_objectIP" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "system__standard_library__abort_undefer_direct" label: "C:\Users\Home\P\src\lab1.adb:26:0" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__initialize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__suspension_objectIP" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "system__standard_library__abort_undefer_direct" label: "C:\Users\Home\P\src\lab1.adb:26:0" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__initialize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "ada__synchronous_task_control__suspension_objectIP" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "_ada_lab1" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+node: { title: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" label: "Lab1\nC:\Users\Home\P\src\lab1.adb:11:1\n64 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_end_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_begin_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "_Unwind_Resume" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_end_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_begin_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "_Unwind_Resume" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_end_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_begin_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "_Unwind_Resume" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_end_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_begin_handler" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "_Unwind_Resume" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__gnat_rcheck_PE_Finalize_Raised_Exception" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "ada__synchronous_task_control__finalize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "ada__synchronous_task_control__finalize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "ada__synchronous_task_control__finalize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "ada__synchronous_task_control__finalize" label: "C:\Users\Home\P\src\lab1.adb:26:4" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "__indirect_call" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+edge: { sourcename: "C:\Users\Home\P\src\lab1.adb:lab1___finalizer.4030" targetname: "ada__exceptions__triggered_by_abort" label: "C:\Users\Home\P\src\lab1.adb:11:1" }
+}
